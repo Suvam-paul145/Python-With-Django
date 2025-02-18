@@ -4,3 +4,6 @@ from django.http import HttpResponse
 def test(request):
     return HttpResponse('<h1>This is text page</h1>',
                         content_type='text/plain')
+
+def home2(request):
+    return render(request,'home2.html')
