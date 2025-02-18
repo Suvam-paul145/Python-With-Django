@@ -1,0 +1,27 @@
+{% load static %}
+<html>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <style>
+        /* img{
+            width: 100px;
+            height: auto;
+        } */
+    </style>
+    <body bgcolor="cyan">
+        <div id="head">
+        <h2 style="color: aqua;">
+            This is the home page
+        </h2>
+        </div>
+        <div id="body">
+            <a href="about1">About</a>
+            <img src="{% static 'image1.jpg' %}" style="height: 100px;
+            width: auto;">
+            
+        </div>
+        <br><br>
+        <div id="foot">
+            <h2 style="color: blueviolet;">Footer</h2>
+        </div>
+    </body>
+</html>
