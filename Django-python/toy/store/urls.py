@@ -13,6 +13,8 @@ urlpatterns = [
     path('addcode',views.addcode),
     path('cal',views.cal),
     path('calculator',views.calculator),
-    
+    path('insert',views.insert),
+    path('ins', views.ins),
+   
     
 ]

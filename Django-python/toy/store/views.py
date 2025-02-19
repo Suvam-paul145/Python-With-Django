@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from store.models import *   # import all classes from models.py
 # Create your views here.
 def test(request):
     return HttpResponse('<h1>This is text page</h1>',
@@ -52,3 +53,16 @@ def cal(request):
     
     #return HttpResponse(c)
     return render(request,'calculator.html',{'w':c,'x':d,'y':e,'z':f})
+
+def insert(request):
+    return render(request, 'insert.html')
+
+def ins(request):
+    u = user()
+    u.name = request.GET['a1']
+    u.mail = request.GET['a2']
+    u.password = request.GET['a3']
+    u.phno = request.GET['a4']
+    u.save()
+    return render(request,'insert.html' )
+    
