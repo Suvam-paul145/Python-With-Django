@@ -16,3 +16,15 @@ def about(request):
 
 def index1(request):
     return render(request, 'index1.html')
+# syntax of a full satck webpage
+def index(request):
+    return render(request,'index.html')
+
+def blog(request):
+    return render(request, 'blog.html')
+
+def class1(request):
+    return render(request, 'class1.html')
+
+def about(request):
+    return render(request, 'about.html')

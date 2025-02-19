@@ -7,7 +7,6 @@ urlpatterns = [
     path('about',views.about),
     path('index1',views.index1),
     path('index',views.index),
-    path('',views.),
-    path('',views.),
-    path('',views.),
+    path('class1',views.class1),
+    path('blog',views.blog),
 ]
