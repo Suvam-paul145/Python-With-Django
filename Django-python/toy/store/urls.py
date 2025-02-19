@@ -9,4 +9,10 @@ urlpatterns = [
     path('index',views.index),
     path('class1',views.class1),
     path('blog',views.blog),
+    path('add',views.add),
+    path('addcode',views.addcode),
+    path('cal',views.cal),
+    path('calculator',views.calculator),
+    
+    
 ]

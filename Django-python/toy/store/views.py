@@ -28,3 +28,27 @@ def class1(request):
 
 def about(request):
     return render(request, 'about.html')
+
+def add(request):
+    return render(request, 'add.html')
+
+def addcode(request):
+    a=int(request.GET['a1'])
+    b=int(request.GET['a2'])
+    c=a+b
+    return render(request,'add.html',{'x':c})
+
+def calculator(request):
+    return render(request,'calculator.html')
+
+def cal(request):
+
+    a=int(request.GET['a1'])
+    b=int(request.GET['a2'])
+    c=a+b
+    d=a-b
+    e=a*b
+    f=a/b
+    
+    #return HttpResponse(c)
+    return render(request,'calculator.html',{'w':c,'x':d,'y':e,'z':f})
