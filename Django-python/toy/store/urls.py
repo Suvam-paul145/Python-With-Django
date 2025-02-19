@@ -15,6 +15,6 @@ urlpatterns = [
     path('calculator',views.calculator),
     path('insert',views.insert),
     path('ins', views.ins),
-   
+    path('registration', views.registration),
     
 ]

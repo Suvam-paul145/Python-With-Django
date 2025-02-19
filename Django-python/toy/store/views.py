@@ -65,4 +65,7 @@ def ins(request):
     u.phno = request.GET['a4']
     u.save()
     return render(request,'insert.html' )
+
+def registration(request):
+    return render(request,'registration.html')
     
