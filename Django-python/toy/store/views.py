@@ -104,6 +104,8 @@ def edcode(request,id):
     d.save()
     return redirect('../show')
 
+def login(request):
+    return render(request,'login.html') 
 
 def log2(request):
     a=request.GET['username']
