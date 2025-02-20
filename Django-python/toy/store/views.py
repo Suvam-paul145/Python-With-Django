@@ -108,7 +108,9 @@ def edcode(request,id):
 def log2(request):
     a=request.GET['username']
     b=request.GET['password']
-    if user2.objects.filter(username=a,password=b):
+    if user.objects.filter(username=a,password=b):
         return render(request,'index.html')
     else:
         return render(request,'login.html')
+
+    
