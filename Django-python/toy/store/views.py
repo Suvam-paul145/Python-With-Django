@@ -69,3 +69,14 @@ def ins(request):
 def registration(request):
     return render(request,'registration.html')
     
+def reg(request):
+    u = registration()
+    u.fullname = request.GET['fullname']
+    u.username = request.GET['username']
+    u.email = request.GET['email']
+    u.password = request.GET['password']
+    u.save()
+    return render(request,'registration.html' )
+
+
+
