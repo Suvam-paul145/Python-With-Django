@@ -66,6 +66,7 @@ def ins(request):
     u.save()
     return render(request,'insert.html' )
 
+
 def registration(request):
     return render(request,'registration.html')
     
