@@ -26,9 +26,10 @@
   <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap"
     rel="stylesheet" />
   <!-- Custom styles for this template -->
-  <link href="{% static Django-python\toy\store\static\css\style.css %}" rel="stylesheet" />
+  <!-- <link href="{% static css\style.css %}" rel="stylesheet" /> -->
+  <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"> -->
   <!-- responsive style -->
-  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+  <!-- <link href="{% static 'css/responsive.css' %}" rel="stylesheet" /> -->
 </head>
 
 <body>
@@ -45,7 +46,7 @@
               <ul class=" ">
                 <li class="">
                   <a class="" href="">
-                    <img src="{%satic 'images/telephone.png'%}" alt="" />
+                    <img src="{% static 'images/telephone.png' %}" alt="" />
                     <span> +01 1234567890</span>
                   </a>
                 </li>
@@ -598,7 +599,7 @@
   </div>
   <!-- end info section -->
 
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="{ % static 'js/jquery-3.4.1.min.js' %}"></script>
   <script type="text/javascript" src="{% static 'js/bootstrap.js'  %}"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
   </script>
