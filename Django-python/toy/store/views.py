@@ -71,7 +71,7 @@ def registration(request):
     return render(request,'registration.html')
     
 def reg(request):
-    u = registration()
+    u = register()
     u.fullname = request.GET['fullname']
     u.username = request.GET['username']
     u.email = request.GET['email']
