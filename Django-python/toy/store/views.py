@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from store.models import *   # import all classes from models.py
 # Create your views here.
@@ -81,3 +81,16 @@ def reg(request):
 
 
 
+def show(request):
+    a=user.objects.all()
+    return render(request,'show.html',{'x':a})
+
+
+def dele(request,id):
+    d=user.objects.get(id=id)
+    d.delete()
+    return redirect("../show")
+    
+def edit(request,id):
+    d=user.objects.get(id=id)
+    return render(request,'edit.html',{'x':d})

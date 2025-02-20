@@ -22,3 +22,5 @@ class register(models.Model):
     password = models.CharField(max_length=50)
     class Meta: 
         db_table = "register"
+
+

@@ -17,5 +17,7 @@ urlpatterns = [
     path('ins', views.ins),
     path('registration', views.registration),
     path('reg', views.reg),
+    path('show', views.show),
     
+    path('del/<int:id>',views.dele),
 ]
