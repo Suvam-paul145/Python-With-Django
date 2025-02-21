@@ -17,6 +17,8 @@ def about(request):
 
 def index1(request):
     return render(request, 'index1.html')
+
+
 # syntax of a full satck webpage
 def index(request):
     return render(request,'index.html')
