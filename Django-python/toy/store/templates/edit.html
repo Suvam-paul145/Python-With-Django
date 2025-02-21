@@ -1,10 +1,10 @@
 <html>
     <body>
-        <form action="../edcode/{{x.id}}">
-            <input type="text"name="a1"value="{{x.name}}">
-            <input type="text"name="a2"value="{{x.email}}">
-            <input type="text"name="a3"value="{{x.password}}">
-            <input type="text"name="a4"value="{{x.phnno}}">
+        <form action="{% url 'edcode' x.id %}">
+            <input type="text" name="a1" value="{{ x.name }}">
+            <input type="text" name="a2" value="{{ x.email }}">
+            <input type="text" name="a3" value="{{ x.password }}">
+            <input type="text" name="a4" value="{{ x.phno }}">
             <input type="submit">
         </form>
     </body>

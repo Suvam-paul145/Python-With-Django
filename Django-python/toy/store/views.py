@@ -94,3 +94,15 @@ def dele(request,id):
 def edit(request,id):
     d=user.objects.get(id=id)
     return render(request,'edit.html',{'x':d})
+
+def edcode(request, id):
+    d = user.objects.get(id=id)
+    d.name = request.GET['a1']
+    d.email = request.GET['a2']
+    d.password = request.GET['a3']
+    d.phno = request.GET['a4']
+    d.save()
+    return redirect('../show')
+
+def insert_new(request):
+    return render(request, 'insert_new.html')
