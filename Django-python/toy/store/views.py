@@ -108,11 +108,13 @@ def login(request):
     return render(request,'login.html') 
 
 def log2(request):
-    a=request.GET['username']
-    b=request.GET['password']
-    if user.objects.filter(username=a,password=b):
-        return render(request,'registration.html')
+    a = request.GET['username']
+    b = request.GET['password']
+    if user.objects.filter(username=a, password=b):
+        return redirect('index_new')
     else:
-        return render(request,'login.html')
+        return render(request, 'login_new.html')
 
-    
+def index_new(request):
+    return render(request, 'index_new.html')
+

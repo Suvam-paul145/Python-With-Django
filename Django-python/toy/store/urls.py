@@ -20,8 +20,5 @@ urlpatterns = [
     path('show', views.show),
     path('del/<int:id>',views.dele),
     path('edit/<int:id>',views.edit),
-    path('edcode/<int:id>',views.edcode),  # Corrected from endcode to edcode
-    path('log2',views.log2),
-    path('login',views.login),
-    path('index_new',views.index_new),
+    path('edcode/<int:id>',views.edcode),
 ]
