@@ -95,14 +95,24 @@ def edit(request,id):
     d=user.objects.get(id=id)
     return render(request,'edit.html',{'x':d})
 
-def edcode(request, id):
-    d = user.objects.get(id=id)
-    d.name = request.GET['a1']
-    d.email = request.GET['a2']
-    d.password = request.GET['a3']
-    d.phno = request.GET['a4']
+def edcode(request,id):
+    d=user.objects.get(id=id)
+    d.name=request.GET['a1']
+    d.email=request.GET['a2']
+    d.password=request.GET['a3']
+    d.phnno=request.GET['a4']
     d.save()
     return redirect('../show')
 
-def insert_new(request):
-    return render(request, 'insert_new.html')
+def login(request):
+    return render(request,'login.html') 
+
+def log2(request):
+    a=request.GET['username']
+    b=request.GET['password']
+    if user.objects.filter(username=a,password=b):
+        return render(request,'registration.html')
+    else:
+        return render(request,'login.html')
+
+    
