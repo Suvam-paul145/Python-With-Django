@@ -125,12 +125,12 @@ def login_new(request):
 def insert_new(request):
     return render(request,'insert_new.html')
     
-def ins(request):
-    u = user()
+def insert(request):
+    u = user4()
     u.name = request.GET['a1']
-    u.phno = request.GET['a2']
-    u.email = request.GET['a3']
-    u.password = request.GET['a4']
+    u.email = request.GET['a2']
+    u.password = request.GET['a3']
+    u.phno = request.GET['a4']
     u.save()
     return render(request,'insert_new.html')
 

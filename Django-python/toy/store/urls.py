@@ -24,5 +24,6 @@ urlpatterns = [
     path('index_new',views.index_new),
     path('login_new',views.login_new),
     path('insert_new',views.insert_new),
+    path('log2',views.log2),
 
 ]
