@@ -24,7 +24,7 @@ class register(models.Model):
         db_table = "register"
 
 def endcode(request,id):
-    d = user.objects.get(id=id)
+    d = register.objects.get(id=id)
     d.name=request.GET['a1']
     d.email=request.GET['a2']
     d.password=request.GET['a3']

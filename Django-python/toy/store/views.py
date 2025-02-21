@@ -111,7 +111,7 @@ def log2(request):
     a=request.GET['username']
     b=request.GET['password']
     if user.objects.filter(username=a,password=b):
-        return render(request,'index.html')
+        return render(request,'registration.html')
     else:
         return render(request,'login.html')
 
