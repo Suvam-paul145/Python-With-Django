@@ -21,4 +21,5 @@ urlpatterns = [
     path('del/<int:id>',views.dele),
     path('edit/<int:id>',views.edit),
     path('edcode/<int:id>',views.edcode),
+    path('index_new',views.index_new),
 ]
