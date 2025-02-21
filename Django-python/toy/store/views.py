@@ -115,4 +115,6 @@ def log2(request):
     else:
         return render(request,'login.html')
 
-    
+
+def index_new(request):
+    return render(request,'index_new.html')

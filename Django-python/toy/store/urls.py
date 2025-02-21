@@ -23,4 +23,5 @@ urlpatterns = [
     path('edcode/<int:id>',views.edcode),  # Corrected from endcode to edcode
     path('log2',views.log2),
     path('login',views.login),
+    path('index_new',views.index_new),
 ]
