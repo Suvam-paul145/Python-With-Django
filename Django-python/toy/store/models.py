@@ -31,3 +31,4 @@ def endcode(request,id):
     d.phno=request.GET['a4']
     d.save()
     return redirect('../show')
+    
