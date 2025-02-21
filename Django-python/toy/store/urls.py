@@ -22,4 +22,5 @@ urlpatterns = [
     path('edit/<int:id>',views.edit),
     path('edcode/<int:id>',views.edcode),
     path('index_new',views.index_new),
+    path('login_new',views.login_new),
 ]

@@ -118,3 +118,5 @@ def log2(request):
 def index_new(request):
     return render(request, 'index_new.html')
 
+def login_new(request):
+    return render(request, 'login_new.html')
